@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquinas Dispensadoras - Productos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Máquinas Dispensadoras</h1>
+        <nav>
+            <ul>
+                <li><a href="index">Inicio</a></li>
+                <li><a href="productos">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="product-list">
+        <!-- Repite estos bloques para más productos -->
+        <a href="Trululu" class="product">
+            <img src="{% static '/imagen/Trululu.jpg' %}" alt="Gomitas Gusanos Ácidos Trululu 80g" class="product-image">
+            <div class="product-info">
+                <h3>Gomitas Gusanos Ácidos Trululu 80g</h3>
+                <p class="brand">Trululu</p>
+                <p class="price">Precio: <span class="currency">$</span><span class="value">0.65</span></p>
+            </div>
+        </a>
+        <a href="Biribir" class="product">
+            <img src="{% static '/imagen/biribiri.jpg'%}" alt="Cake Cookies & Cream Biri Biri 80g" class="product-image">
+            <div class="product-info">
+                <h3>Cake Cookies & Cream Biri Biri 80g</h3>
+                <p class="brand">Biri Biri</p>
+                <button class="buy-button" disabled>Agotado</button>
+            </div>
+        </a>
+        <a href="Inake" class="product">
+            <img src="{% static '/imagen/Inakei-Chocolate.jpg'%} " alt="Cake Cookies & Cream Biri Biri 80g" class="product-image">
+            <div class="product-info">
+                <h3>Cake Chococake Inacake Chocolate 100g</h3>
+                <p class="brand">Ina Cake</p>
+                <p class="price">Precio: <span class="currency">$</span><span class="value">1.00</span></p>
+            </div>
+        </a>
+        <!-- Repite estos bloques para más productos -->
+    </div>
+</section>
+
+    <div class="copyright">
+        <p>&copy; 2023 Universidad Estatal de Milagro (UNEMI)</p>
+    </div>
+
+</body>
+</html>

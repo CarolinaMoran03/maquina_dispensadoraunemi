@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#inicio {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+#productos-destacados {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 0 -10px; /* Ajusta el espacio entre los productos */
+}
+.product h3 {
+    text-decoration: none;
+}
+
+.product {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    text-align: left;
+    padding: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: white;
+    background-color: #3498db;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.price:hover {
+    background-color: #2980b9;
+}
+
+.view-all {
+    margin-top: 20px;
+}
+
+#acerca {
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.buy-button {
+    font-weight: bold;
+    background-color: #e74c3c; /* Color de fondo cuando está deshabilitado */
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* Cambia el cursor al estar deshabilitado */
+}
+
+.buy-button:hover {
+    background-color: #e74c3c; /* Mantiene el mismo color de fondo al pasar el ratón sobre él */
+}
+.product {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Heredar el color del texto del contenedor padre */
+    cursor: pointer; /* Cambiar el cursor al hacer clic */
+}
+
+
+.product-info h3,
+.product-info .brand,
+.product-info .price {
+    margin-bottom: 0; /* Eliminar el margen inferior de los elementos dentro de .product-info */
+}
+/* Estilos adicionales para el botón "Ver todos los productos" y el texto "Inicio" y "Productos" */
+.view-all a {
+    background-color: orange;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#inicio, #productos-destacados {
+    font-weight: bold;
+}
+/* Estilos adicionales para el botón "Ver todos los productos" y el texto "Inicio" y "Productos" */
+.view-all {
+    text-align: right;
+}
+
+.view-all a {
+    background-color: orange;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* Estilos para la sección de derechos de autor */
+.copyright {
+    position:static;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con opacidad 0.7 */
+    color: white;
+    padding: 5px;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 10vh; /* Ajusta la altura según tus preferencias */
+}
